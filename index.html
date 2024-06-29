@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet">
+     <!-- Animaciones CSS CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Monse Orozco_Portafolio Web
+    </title>
+</head>
+<body>
+    <!--Barra de Navegación-->
+    <nav>
+        <h1>Monse Orozco</h1>
+        <ul>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li><li><a href="#projects" class="nav-link">Projects</a></li><li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!--Sección Hero-->
+    <section class="hero" id="about me">
+        <img src="images/35.03.jpg" alt="futura maestra" class="hero-img" Loading="lazy">
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio_title">Acerca de mí</h2>
+            <p>Soy estudiante de programación y curso una licenciatura en la Facultad de Educación en Mérida, Yucatán.</p>
+        </div>
+    </section>
+
+    <!--About me-->
+    <section class="more-about">
+        <h2>Más Acerca Mí</h2>
+        <p>Me gustan ver kdramas y escuchar la música de BTS.</p>
+        <p>Me considero una persona responsable y dedicada.</p>
+        <p>Me gusta viajar y conocer el mundo.</p>
+    </section>
+
+    <!--Skills-->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+            <div class="skills-wrapper">
+                <div class="first-set__animate__pulse">
+                    <img src="images/icons8-html-5.svg" alt="HTML5" Loading="lazy" class="icon icon-card">
+                    <img src="images/icons8-css3.svg" alt="CSS3" Loading="lazy" class="icon icon-card">
+                    <img src="images/icons8-javascript.svg" alt="JavaScrpt" Loading="lazy" class="icon icon-card">
+                </div>
+                <div class="second-set__animate__pulse">
+                    <img src="images/icons8-bootstrap.svg" alt="Bootstrap" Loading="lazy" class="icon icon-card">
+                    <img src="images/icons8-github-50.svg" alt="Git" Loading="lazy" class="icon icon-card">
+                    <img src="images/icons8-react-native.svg" alt="React" Loading="lazy" class="icon icon-card">
+                </div>
+            </div>
+    </section>
+
+    <!--Projects-->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="images/pinterestinicio.PNG" alt="" Loading="lazy" class="project-pic">
+                <h3 class="project-title">Pinterest Clone</h3>
+                <p class="project-details">This project is a clone of the Pinterest home interface, created exclusively with HMTL5 and CSS3, with different colors.</p>
+                <a href="https://monseorbu.github.io/iniciodepinterest/" target="_blank" class="project-link">Check it out!</a>
+            </div>
+
+            <div class="project-container project-card">
+                <img src="images/portafolioweb.PNG" alt="" Loading="lazy" class="project-pic">
+                <h3 class="project-title">Portafolio Web</h3>
+                <p class="project-details">Un archivo para guardar todos los proyectos que hice en mi curso de Tecnolochicas Pro.</p>
+                <a href="https://monseorbu.github.io/portafoliowebactualizado/" target="_blank" class="project-link">Check It out!</a>
+            </div>
+
+            <div class="project-container project-card">
+                <img src="images/work in progress.jpeg" alt="" Loading="lazy" class="project-pic">
+                <h3 class="project-title">Project 3</h3>
+                <p class="project-details">Work in Progress...</p>
+                <a href="#" target="_blank" class="project-link">Stay tuned!</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Redes Sociales-->
+    <div class="socials">
+        <a href="https://github.com/monseorbu" target="_blank"><img src="iconos/icons8-github-80.png" alt="Github" Loading="lazy" class="socicon"></a>
+
+        <a href="https://www.instagram.com/monseorbu/" target="_blank"><img src="iconos/icons8-instagram-50.png" alt="Instagram" Loading="lazy" class="socicon"></a>
+
+        <a href="https://wa.me/529991263894" target="_blank"><img src="iconos/icons8-whatsapp-100.png" alt="Whatsapp" Loading="lazy" class="socicon"></a>
+
+        <a href="https://www.linkedin.com/in/monse-orozco-905633314/" target="_blank"><img src="iconos/icons8-linkedin-96.png" alt="Linkedin" Loading="lazy" class="socicon"></a>
+    </div>
+
+    <!--Scroll button-->
+    <i class="scroll-up" id="scroll-up">
+        <img src="iconos/Image20240625201905.gif" class="socicon up-arrow" alt="scroll up">
+    </i>
+
+    <!--Footer-->
+    <footer>
+        <p>Creado por <a href="https://www.instagram.com/monseorbu/" target="_blank">Monse Orozco 💜</a></p>
+    </footer>
+
+    <!--JavaScript link-->
+    <script src="app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/*Variables*/
+
+:root 
+/*selecciona el elemento raíz de un árbol que representa el documento, una ruta*/
+{
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font:700;
+    --bolder-font:900;
+    --bg-color: #fcfcfc;
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+/*Fin de las variables*/
+
+html{
+    scroll-behavior: smooth;
+    /*especifica el comportamiento del desplazamiento para un elemento con desplazamiento*/
+}
+
+/*CSS Resets*/
+*{
+    margin: 0;
+    /*establece el margen para los cuatro lados*/
+    padding: 0;
+    /*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+    box-sizing: border-box;
+    /*debe calcular el ancho y alto total de un elemento*/
+}
+
+ul{
+    /*ul=crea una lista no ordenada*/
+    list-style-type: none;
+    /*Especifica el tipo de marcador de elemento de lista*/
+    /*none=ninguno*/
+}
+
+a{
+    text-decoration: none;
+    /*es un formato de texto que consiste en trazar una línea horizontal debajo de las letras*/
+    color: var(--primary-color);
+}
+
+a:hover
+
+/*Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor*/
+{
+    color: var(--secondary-color);
+}
+
+body
+/*apariencia del contenido*/
+{
+    font-family: var(--font-family);
+    /*permite identificar el tipo de fuente en un elemento*/
+}
+
+/*NavBar*/
+
+nav 
+/*representa una sección de una página cuyo propósito es proporcionar enlaces de navegación*/
+{
+    position: sticky;
+    /*especifica cómo un elemento es posicionado en el documento. Las propiedades top, right, bottom, y left determinan la ubicación final de los elementos posicionados*/
+    top: 0;
+    /*posiciona un elemento respacto a su posición original tomando como referencia el borde superior del elemento*/
+    left: 0;
+    /*permite desplazar un elemento respecto a su posición original tomando como referencia el borde izquierdo del elemento*/
+    z-index: 1;
+    /*indica el orden de un elemento posicionado y sus descendientes. Cuando varios elementos se superponen, los elementos con mayor valor z-index cubren aquellos con menor valor*/
+    display: flex;
+    /*especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible)*/
+    /*flex es una propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible*/
+    align-items: center;
+    /*indica la alineación de un elemento dentro del bloque que lo contiene*/
+    justify-content: space-between;
+    /*define cómo el navegador distribuye el espacio entre y alrededor de los items flex, a lo largo del eje principal de su contenedor. El alineamiento se produce luego de que las longitudes y márgenes automáticos son aplicados, lo que significa que, si existe al menos un elemento flexible con flex-grow diferente a 0, no tendrá efecto ya que no habrá espacio disponible*/
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    /*define el color de fondo de un elemento, puede ser el valor de un color o la palabra clave transparent*/
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    /*añade efectos de sombra alrededor de un marco de un elemento*/
+}
+
+nav h1{
+    color: var(--primary-color);
+}
+
+nav a{
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+nav a:hover{
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul{
+    display: flex;
+    gap: 1.9rem;
+    /*establece espacio entre filas*/
+}
+
+nav ul li{
+    font-weight: var(--bold-font);
+}
+
+/*Esconder botón de hamburguesa*/
+
+.burger-menu{
+    color: var(--primary-color);
+    font-size: 2rem;
+    /*especifica la dimensión de la letra*/
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    /*establece el tipo de cursor*/
+    display: none;
+}
+
+/*Fin de NavBar*/
+
+/*Inicio de Hero*/
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    /*establece el ancho de un elemento*/
+    margin: auto;
+}
+
+.hero img{
+    height: 17rem;
+    width: 22rem;
+    padding-top: 20px;
+}
+
+.bio{
+    width: 22rem;
+    padding: 0.625rem;
+    box-shadow: 0px 2px 15px 2px var(--primary-color);
+    border-radius: 8px;
+}
+
+.bio h1{
+    margin-bottom: var(--bottom-margin);
+}
+
+.bio p{
+    line-height: var(--line-height);
+    /*la altura de una casilla*/
+    padding: 0.3rem 0;
+}
+
+/*About me*/
+
+.more-about{
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+}
+
+.more-about h2{
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.more-about p{
+    line-height: var(--line-height);
+    padding: 0.4rem;
+    text-align: center;
+}
+
+/*Skill section*/
+.skills{
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.skill-header{
+    margin-bottom: 1rem;
+}
+
+.skills-wrapper img{
+    padding: 1.25rem;
+}
+
+.icon{
+    width: 11.875rem;
+    height: 11.25rem;
+}
+
+.icon-card{
+    background-color: #fff;
+    box-shadow: 0 3px 10px var(--secondary-color);
+    border-radius: 11px;
+    padding: 20px;
+    margin: 10px;
+}
+
+/*Project Section*/
+.projects{
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+}
+
+.project-pic{
+    width: 65%;
+    height: 60%;
+}
+
+.projects-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project-container{
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+}
+
+.projects-container p{
+    padding: 0.4rem;
+}
+
+.project-title{
+    margin-bottom: var(--bottom-margin);
+}
+
+.ptoject-details{
+    margin-bottom: var(--bottom-margin)
+}
+
+.project-card{
+    background-color: #fff;
+    box-shadow: 0 3px 10px var(--primary-color);
+    border-radius: 11px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+}
+
+.socicon{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+footer{
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+/*Scroll button*/
+
+.scroll-up{
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.up-arrow{
+    width: 3rem;
+    height: 3rem;
+}
+
+/*Media queries for responsiveness*/
+@media screen and (max-width: 720px){
+    nav{
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul{
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li{
+        margin: 8px;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+
+    nav ul.show{
+        transform: translateX(0);
+    }
+
+    .hero{
+        margin-top: -4rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero img{
+        height: 25rem;
+        width: 22rem;
+    }
+
+    .bio{
+        margin-top: -7rem;
+        width: 20.5rem;
+    }
+
+    .more-about {
+        margin-top: 2rem;
+        padding: 1rem 3.5rem;
+    }
+
+    .more-about h2{
+        text-align: center;
+    }
+
+    .more-about p{
+        text-align: justify;
+    }
+
+    .icon{
+        width: 5.875rem;
+        height: 5.25rem;
+    }
+
+    .projects-container{
+        flex-direction: column;
+    }
+
+    .project-container{
+        width: 20.875rem;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .hero img{
+        height: 17.5rem;
+        width: 10rem;
+    }
+
+    .bio{
+        width: 18.3rem;
+    }
+
+    .project-container{
+        width: 17.875rem;
+    }
+}
